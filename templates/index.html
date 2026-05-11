@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Placement Predictor</title>
+    </head>
+    <body>
+        <h1>Student Placement Predictor</h1>
+        <p>This is a simple web application that predicts whether a student will be placed or not based on their academic and personal details.</p>
+
+        {% if result %}
+            <p>{{ result }}</p>
+        {% endif %}
+
+
+        <form method = "POST" action = "/predict">
+            <label>CGPA</label><br>
+            <input type = "text" name = "cgpa" placeholder = "Enter CGPA"><br><br>
+
+            <label>IQ</label><br>
+            <input type = "text" name = "iq" placeholder = "Enter IQ"><br><br>
+
+            <label>Profile Score</label><br>
+            <input type = "text" name = "profile_score" placeholder = "Enter Profile Score"><br><br>
+
+            <input type = "submit" value = "Predict">
+        </form>
+    </body>
+</html>

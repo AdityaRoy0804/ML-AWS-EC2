@@ -1,9 +1,10 @@
-from flask import Flask,render_template
+from flask import Flask,render_template, request
 import joblib
 import numpy as np
 
 ## Model Load
-model = joblib.load("student_placement_rf_model.pkl")
+model = joblib.load("student_placement_knn_model.pkl")
+
 
 ## Flask App
 app = Flask(__name__)
