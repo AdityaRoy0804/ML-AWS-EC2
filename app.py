@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 ## Model Load
-model = joblib.load("student_placement_knn_model.pkl")
+model = joblib.load("student_placement_pipeline_model.pkl")
 
 
 ## Flask App
